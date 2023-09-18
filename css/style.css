@@ -23,8 +23,34 @@
     justify-content: center;
 }
 
+.content-shadow {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, transparent, rgba(83, 83, 83, 0.8));
+    z-index: 20;
+}
+
+.shadow2 {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(83, 83, 83, 0.8));
+    z-index: 20;
+}
+
 .content-carousel {
-    width: 890px;
+    width: 1120px;
     height: auto;
     display: flex;
     overflow: hidden;
@@ -40,6 +66,10 @@
     width: 200px;
     height: 300px;
     background-color: rgb(134, 159, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
 }
 
 .buttons-carousel {
